@@ -1,6 +1,6 @@
 # Cartas Para Mim
 
-Este é um projeto de landing page para o canal **Cartas Para Mim**, onde visitantes podem enviar cartas, ler poemas, assistir vídeos, e assinar uma newsletter.
+Este é um projeto de landing page para o canal **Fragmentos Por Lia**, onde visitantes podem enviar cartas, ler poemas, assistir vídeos, e assinar uma newsletter.
 
 ## 🖥 Pré-visualização
 ![Preview](https://via.placeholder.com/800x400)
