@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fragmentos por Lia: um espaço para poemas, cartas e reflexões sobre sentimentos e humanidade.">
   <title>Fragmentos por Lia</title>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -22,88 +23,70 @@
     </nav>
   </header>
 
+  <!-- Seção de Cartas -->
   <section id="cartas">
-  <div class="cartas-form">
-    <h2>Escreva Sua Carta</h2>
-    <p>Compartilhe seus sentimentos, histórias ou memórias. Suas palavras podem ser lidas internamente ou até mesmo em vídeos do projeto <strong>"Fragmentos por Lia"</strong>, sempre com cuidado e respeito.</p>
-    <iframe 
-      data-tally-src="https://tally.so/r/mYlN9d?transparentBackground=1" 
-      width="100%" 
-      height="1000" 
-      frameborder="0" 
-      marginheight="0" 
-      marginwidth="0" 
-      title="Envie sua Carta">
-    </iframe>
-  </div>
+    <div class="cartas-form">
+      <h2>Escreva Sua Carta</h2>
+      <p>Compartilhe seus sentimentos, histórias ou memórias. Suas palavras podem ser lidas internamente ou até mesmo em vídeos do projeto <strong>"Fragmentos por Lia"</strong>, sempre com cuidado e respeito.</p>
+      <iframe 
+        data-tally-src="https://tally.so/r/mYlN9d?transparentBackground=1" 
+        width="100%" 
+        height="1000" 
+        frameborder="0" 
+        marginheight="0" 
+        marginwidth="0" 
+        title="Envie sua Carta">
+      </iframe>
+    </div>
   </section>
+  <script async src="https://tally.so/widgets/embed.js"></script>
 
-<!-- Script Tally -->
-<script async src="https://tally.so/widgets/embed.js"></script>
-
-  
-
-
-  
-
+  <!-- Seção de Poemas -->
   <section id="poemas">
     <h2>Poemas Recentes</h2>
     <div class="carrossel" id="carrossel-poemas"></div>
   </section>
 
-
-
+  <!-- Seção de Vídeo -->
   <section id="video" class="video-section">
-  <h2>Vídeo da Semana</h2>
-  <iframe src="https://www.youtube.com/embed/TEe8K3mDjck" allowfullscreen></iframe>
+    <h2>Vídeo da Semana</h2>
+    <iframe src="https://www.youtube.com/embed/TEe8K3mDjck" allowfullscreen title="Vídeo da Semana"></iframe>
   </section>
 
-
+  <!-- Seção Sobre Mim -->
   <section id="sobre">
     <h2>Sobre Mim</h2>
     <div class="bio-section">
-      <img src="https://via.placeholder.com/120" alt="Minha Foto.jpg">
+      <img src="https://via.placeholder.com/120" alt="Foto de Elias Romualdo">
       <div>
         <h3>"As palavras cá escritas cortam como uma lâmina úmida a carne viva."</h3>
-        <p>Sou o Elias, ou para os mais intimos Lia. A escrita foi um refúgio durante a minha infância. Procuro partilha uma parte dos meus próprios fragmentos, na busca pela minha própria humanidade. Não é um ato de vangloria e sim misericodia.</p>
+        <p>Sou o Elias, ou para os mais íntimos Lia. A escrita foi um refúgio durante a minha infância. Procuro partilhar uma parte dos meus próprios fragmentos, na busca pela minha própria humanidade. Não é um ato de vanglória e sim misericórdia.</p>
       </div>
     </div>
   </section>
 
+  <!-- Seção da Newsletter -->
+  <section id="newsletter">
+    <div class="newsletter-form">
+      <h2>Inscreva-se na Newsletter</h2>
+      <p>Receba reflexões, poemas e novidades diretamente no seu e-mail.</p>
+      <button onclick="Tally.openPopup('nPJVkb')">Quero Me Inscrever</button>
+    </div>
+  </section>
+  <script async src="https://tally.so/widgets/embed.js"></script>
+  <script>
+    window.TallyConfig = {
+      "formId": "nPJVkb",
+      "popup": {
+        "emoji": { "text": "👋", "animation": "heart-beat" },
+        "open": { "trigger": "scroll", "scrollPercent": 50 },
+        "layout": "modal",
+        "doNotShowAfterSubmit": true
+      }
+    };
+  </script>
 
-<!-- Seção da Newsletter (botão manual) -->
-<section id="newsletter">
-  <div class="newsletter-form">
-    <h2>Inscreva-se na Newsletter</h2>
-    <p>Receba reflexões, poemas e novidades diretamente no seu e-mail.</p>
-    <button onclick="Tally.openPopup('nPJVkb')">Quero Me Inscrever</button>
-  </div>
-</section>
-
-<!-- Script do Tally -->
-<script async src="https://tally.so/widgets/embed.js"></script>
-<script>
-  window.TallyConfig = {
-    "formId": "nPJVkb",
-    "popup": {
-      "emoji": {
-        "text": "👋",
-        "animation": "heart-beat"
-      },
-      "open": {
-        "trigger": "scroll", // Pop-up abre quando o usuário rolar 50% da página
-        "scrollPercent": 50
-      },
-      "layout": "modal", // Modal centralizado
-      "doNotShowAfterSubmit": true // Não exibir de novo após inscrição
-    }
-  };
-</script>
-
-
-
-
-
+  <!-- Redes Sociais -->
   <section>
     <div class="social-icons">
       <h3>Conecte-se Comigo</h3>
@@ -114,12 +97,12 @@
     </div>
   </section>
 
-
-
+  <!-- Rodapé -->
   <footer>
     © 2025 Fragmentos por Lia | Percorrendo as Curvas dos Sentimentos.
   </footer>
 
+  <!-- Modal de Poema -->
   <div class="modal" id="poemaModal">
     <div class="modal-content">
       <span class="close-btn" onclick="fecharModal()">&times;</span>
@@ -128,17 +111,19 @@
     </div>
   </div>
 
-  
+  <!-- Script dos Poemas e Modal -->
   <script>
     const poemas = [
-      { titulo: "Savana da Miragem", texto: "Não perca o tato<br>Não desista da obra<br>Tenho na mão o fio da meada<br>Carrego essa persona, desastrada<br>Não perco o tato, nem o personagem<br>Retiro o fio do elemento distraído<br>Que carrego<br>Sem ação<br>Como uma garra de uma animal selvagem<br>Carrego e luto por seu provindo fim<br>Na savana da miragem" },
+      { titulo: "Savana da Miragem", texto: "Não perca o tato<br>Não desista da obra<br>Tenho na mão o fio da meada..." },
       { titulo: "Quando chove dentro de mim", texto: "Chove lá fora e chove aqui dentro..." },
-      { titulo: "Quando chove dentro de mim", texto: "Chove lá fora e chove aqui dentro..." },
-      { titulo: "Quando chove dentro de mim", texto: "Chove lá fora e chove aqui dentro..." },
-      { titulo: "Quando chove dentro de mim", texto: "Chove lá fora e chove aqui dentro..." },
-      { titulo: "Quando chove dentro de mim", texto: "Chove lá fora e chove aqui dentro..." },
+      { titulo: "O eco da memória", texto: "As lembranças ecoam, suaves e firmes..." },
+      { titulo: "Fragmentos ao vento", texto: "Cada palavra solta, levada pelo vento..." },
+      { titulo: "Horizonte Vazio", texto: "Perco-me no horizonte, e nele, me encontro..." },
+      { titulo: "Véu de Inverno", texto: "No frio que cobre a pele, aqueço-me por dentro..." }
     ];
+
     const carrossel = document.getElementById('carrossel-poemas');
+
     function carregarPoemas() {
       carrossel.innerHTML = '';
       poemas.forEach((poema, index) => {
@@ -149,27 +134,25 @@
         carrossel.appendChild(card);
       });
     }
+
     function abrirModal(index) {
       document.getElementById('modalTitulo').textContent = poemas[index].titulo;
-      document.getElementById('modalTexto').textContent = poemas[index].texto;
+      document.getElementById('modalTexto').innerHTML = poemas[index].texto; // mantém quebras
       document.getElementById('poemaModal').style.display = 'flex';
     }
+
     function fecharModal() {
       document.getElementById('poemaModal').style.display = 'none';
     }
-    function checkFileSize(input) {
-      const file = input.files[0];
-      if (file && file.size > 2 * 1024 * 1024) {
-        alert('O arquivo excede o limite de 2MB.');
-        input.value = '';
-      }
-    }
+
     window.onclick = function(event) {
       if (event.target == document.getElementById('poemaModal')) {
         fecharModal();
       }
     };
+
     carregarPoemas();
   </script>
 </body>
 </html>
+
