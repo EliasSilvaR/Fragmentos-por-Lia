@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cartas Para Mim</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Cartas Para Mim</h1>
+    <p>Um espaço para escrever cartas, ler poemas e encontrar força nas palavras.</p>
+    <nav>
+      <a href="#cartas">Cartas</a>
+      <a href="#poemas">Poemas</a>
+      <a href="#newsletter">Newsletter</a>
+      <a href="#video">Vídeo</a>
+      <a href="#sobre">Sobre Mim</a>
+    </nav>
+  </header>
+
+  <section id="cartas">
+    <div class="cartas-form">
+      <h2>Escreva Sua Carta Para Mim</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST" enctype="multipart/form-data">
+        <input type="text" name="nome" placeholder="Seu nome (opcional)">
+        <textarea name="mensagem" rows="4" placeholder="Escreva sua carta aqui..." required></textarea>
+        <label>Anexe uma imagem (opcional, até 2MB):</label>
+        <input type="file" name="imagem" accept="image/*" onchange="checkFileSize(this)">
+        <button type="submit">Enviar Carta</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="poemas">
+    <h2>Poemas Recentes</h2>
+    <div class="carrossel" id="carrossel-poemas"></div>
+  </section>
+
+  <section id="newsletter">
+    <div class="newsletter-form">
+      <h2>Assine a Newsletter</h2>
+      <p>Receba cartas e reflexões diretamente no seu email.</p>
+      <form action="https://yourmailchimpurl.com" method="POST">
+        <input type="email" name="email" placeholder="Seu email" required>
+        <button type="submit">Inscrever-se</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="video" class="video-section">
+    <h2>Vídeo da Semana</h2>
+    <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID" allowfullscreen></iframe>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <div class="bio-section">
+      <img src="https://via.placeholder.com/120" alt="Minha Foto">
+      <div>
+        <h3>"Escrever é como costurar a alma."</h3>
+        <p>Sou [Seu Nome], apaixonado por palavras desde criança. Aqui compartilho cartas, poemas e reflexões como forma de conexão e cura.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="social-icons">
+      <h3>Conecte-se Comigo</h3>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+      <a href="#"><i class="fab fa-spotify"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Cartas Para Mim | Criado com amor e palavras.
+  </footer>
+
+  <div class="modal" id="poemaModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="fecharModal()">&times;</span>
+      <h2 id="modalTitulo"></h2>
+      <p id="modalTexto"></p>
+    </div>
+  </div>
+
+  <script>
+    const poemas = [
+      { titulo: "Carta ao meu eu de 18 anos", texto: "Querido eu de 18 anos..." },
+      { titulo: "Quando chove dentro de mim", texto: "Chove lá fora e chove aqui dentro..." },
+    ];
+    const carrossel = document.getElementById('carrossel-poemas');
+    function carregarPoemas() {
+      carrossel.innerHTML = '';
+      poemas.forEach((poema, index) => {
+        const card = document.createElement('div');
+        card.className = 'poema-card';
+        card.innerHTML = `<h4>${poema.titulo}</h4><p>${poema.texto.substring(0, 80)}...</p>`;
+        card.onclick = () => abrirModal(index);
+        carrossel.appendChild(card);
+      });
+    }
+    function abrirModal(index) {
+      document.getElementById('modalTitulo').textContent = poemas[index].titulo;
+      document.getElementById('modalTexto').textContent = poemas[index].texto;
+      document.getElementById('poemaModal').style.display = 'flex';
+    }
+    function fecharModal() {
+      document.getElementById('poemaModal').style.display = 'none';
+    }
+    function checkFileSize(input) {
+      const file = input.files[0];
+      if (file && file.size > 2 * 1024 * 1024) {
+        alert('O arquivo excede o limite de 2MB.');
+        input.value = '';
+      }
+    }
+    window.onclick = function(event) {
+      if (event.target == document.getElementById('poemaModal')) {
+        fecharModal();
+      }
+    };
+    carregarPoemas();
+  </script>
+</body>
+</html>
