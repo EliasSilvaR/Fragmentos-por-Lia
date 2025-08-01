@@ -14,7 +14,7 @@ header {
 header h1 { 
   margin: 0; 
   font-size: 3rem; 
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Georgia', cursive;
 }
 nav a { 
   color: white; 
