@@ -109,6 +109,12 @@ button:hover {
   font-size: 1.1rem;
   line-height: 1.8;
 }
+
+/* Adicione esta regra */
+#modalTexto {
+  white-space: pre-line;
+}
+
 .close-btn { 
   position: absolute; 
   top: 10px; right: 15px; 
