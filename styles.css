@@ -7,7 +7,7 @@ body {
 }
 
 header { 
-  background: linear-gradient(135deg, #b497bd, #f4c3c2); /* gradiente suave pastel */
+  background: linear-gradient(135deg, #b497bd, #979ebd); /* gradiente suave pastel */
   color: white; 
   text-align: center; 
   padding: 2.5rem;
@@ -152,11 +152,11 @@ iframe {
   transition: color 0.3s;
 }
 .social-icons a:hover {
-  color: #a17fa6;
+  color: #979ebd;
 }
 
 footer { 
-  background: #b497bd; 
+  background: #979ebd; 
   color: white; 
   text-align: center; 
   padding: 1.2rem; 
