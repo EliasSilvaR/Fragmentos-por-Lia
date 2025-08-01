@@ -170,9 +170,11 @@ iframe {
   gap: 1.5rem; 
   margin-top: 2rem;
 }
+
 .bio-section img { 
   border-radius: 50%; 
-  width: 130px; 
+  width: 180px; /* Aumente aqui, ex: 150px, 180px, 200px */
+  height: 180px; /* (opcional) só use se quiser manter proporção fixa */
   border: 3px solid #f4c3c2;
 }
 .bio-section p {
