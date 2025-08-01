@@ -7,7 +7,7 @@ body {
 }
 
 header { 
-  background: linear-gradient(135deg, #b497bd, #979ebd); /* gradiente suave pastel */
+  background: linear-gradient(135deg, #9edae6, #979ebd); /* gradiente suave pastel */
   color: white; 
   text-align: center; 
   padding: 2.5rem;
