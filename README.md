@@ -3,13 +3,13 @@
 Este é um projeto de landing page para o canal **Fragmentos Por Lia**, onde visitantes podem enviar cartas, ler poemas, assistir vídeos, e assinar uma newsletter.
 
 ## 🖥 Pré-visualização
-![Preview](https://via.placeholder.com/800x400)
+[![Preview](https://via.placeholder.com/800x400)](https://eliassilvar.github.io/Fragmentos-por-Lia/)
 
 ---
 
 ## 🚀 Como publicar no GitHub Pages
 
-1. Crie um repositório no GitHub chamado `cartas-para-mim` (ou outro nome de sua preferência).
+1. Crie um repositório no GitHub chamado `Fragmentos-por-Lia` (ou outro nome de sua preferência).
 2. Faça upload dos arquivos `index.html` e `styles.css` para o repositório (arraste e solte na área de upload do GitHub).
 3. Vá até **Settings > Pages**.
 4. Em **Source**, selecione a branch principal (main ou master) e clique em **Save**.
