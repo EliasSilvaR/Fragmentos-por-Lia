@@ -34,6 +34,12 @@
       </form>
     </div>
   </section>
+  
+
+  
+
+
+  
 
   <section id="poemas">
     <h2>Poemas Recentes</h2>
@@ -58,6 +64,39 @@
       </div>
     </div>
   </section>
+
+
+<!-- Seção da Newsletter (botão manual) -->
+<section id="newsletter">
+  <div class="newsletter-form">
+    <h2>Inscreva-se na Newsletter</h2>
+    <p>Receba reflexões, poemas e novidades diretamente no seu e-mail.</p>
+    <button onclick="Tally.openPopup('nPJVkb')">Quero Me Inscrever</button>
+  </div>
+</section>
+
+<!-- Script do Tally -->
+<script async src="https://tally.so/widgets/embed.js"></script>
+<script>
+  window.TallyConfig = {
+    "formId": "nPJVkb",
+    "popup": {
+      "emoji": {
+        "text": "👋",
+        "animation": "heart-beat"
+      },
+      "open": {
+        "trigger": "scroll", // Pop-up abre quando o usuário rolar 50% da página
+        "scrollPercent": 50
+      },
+      "layout": "modal", // Modal centralizado
+      "doNotShowAfterSubmit": true // Não exibir de novo após inscrição
+    }
+  };
+</script>
+
+
+  
 
    <section id="newsletter">
     <div class="newsletter-form">
