@@ -55,7 +55,7 @@ section {
 }
 
 button { 
-  background: #b497bd; 
+  background: #979ebd; 
   color: white; 
   border: none; 
   padding: 12px 18px; 
@@ -190,7 +190,7 @@ iframe {
 .social-icons a { 
   font-size: 2rem; 
   margin: 0 12px; 
-  color: #b497bd; 
+  color: #979ebd; 
   transition: color 0.3s;
 }
 .social-icons a:hover {
