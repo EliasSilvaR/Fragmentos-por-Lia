@@ -87,7 +87,7 @@ button:hover {
 }
 
 .poema-card {
-  flex: 0 0 calc(33.333% - 1rem); /* 3 cards visíveis por vez */
+  flex: 0 0 calc(50% - 1rem); /* 2 cards visíveis por vez */
   margin: 0.5rem;
   background: #fff;
   padding: 1.5rem;
@@ -96,6 +96,7 @@ button:hover {
   cursor: pointer;
   transition: transform 0.25s, box-shadow 0.25s;
   font-style: italic;
+  height: 250px; /* <<< altura personalizada (exemplo) */
 }
 .poema-card:hover {
   transform: scale(1.04);
