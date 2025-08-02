@@ -96,7 +96,7 @@ button:hover {
   cursor: pointer;
   transition: transform 0.25s, box-shadow 0.25s;
   font-style: italic;
-  height: 450px; /* <<< altura personalizada (exemplo) */
+  height: 300px; /* <<< altura personalizada (exemplo) */
 }
 .poema-card:hover {
   transform: scale(1.04);
